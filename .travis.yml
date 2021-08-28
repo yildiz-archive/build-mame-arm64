@@ -1,9 +1,5 @@
 language: generic
 
-cache:
-  directories:
-    - mame
-
 arch: arm64
 
 git:
