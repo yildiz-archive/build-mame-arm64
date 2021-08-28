@@ -15,8 +15,8 @@ services:
   - docker
 
 before_install:
-  - apt-get update -qq
-  - apt-get install -y  libsdl2-dev libasound2 qtbase5-dev
+  - sudo apt-get update -qq
+  - sudo apt-get install -y libsdl2-dev libasound2 qtbase5-dev
   - git clone --depth 1 --branch mame0235 https://github.com/mamedev/mame.git
   
 script:
