@@ -1,6 +1,8 @@
-sudo: required
-
 language: generic
+
+cache:
+  directories:
+    - mame
 
 arch: arm64
 
@@ -16,4 +18,5 @@ before_install:
   - git clone --depth 1 --branch mame0235 https://github.com/mamedev/mame.git
   
 script:
+  - cd mame
   - make SUBTARGET=arcade
