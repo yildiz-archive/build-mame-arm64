@@ -1,0 +1,16 @@
+sudo: required
+
+language: generic
+
+arch: arm64
+
+git:
+  depth: false
+
+dist: xenial
+
+services:
+  - docker
+
+before_install:
+  - git clone --depth 1 --branch mame0235 https://github.com/mamedev/mame.git
