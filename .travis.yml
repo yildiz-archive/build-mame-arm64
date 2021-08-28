@@ -9,7 +9,7 @@ arch: arm64
 git:
   depth: false
 
-dist: xenial
+dist: bionic
 
 services:
   - docker
